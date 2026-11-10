@@ -1,0 +1,19 @@
+{
+  "name": "qa-lab",
+  "version": "0.1.0",
+  "private": true,
+  "description": "SlotKit: a small multi-tenant booking app with a toggleable bug bank for QA and AI-assisted testing demos",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test \"test/**/*.test.js\"",
+    "verify:bugs": "node scripts/verify-bugs.js",
+    "check:migrations": "node scripts/check-migrations.js",
+    "e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0"
+  }
+}
