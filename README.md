@@ -30,11 +30,9 @@ npm run verify:bugs      # each bug must be caught by its test
 npm run check:migrations # exits 1: flags the pending migration
 
 npm install && npx playwright install chromium
-npm run e2e              # browser tests (see note below)
+npm run e2e              # browser tests
 QA_BUGS=3ds-stuck npm run e2e
 ```
-
-> **Note:** the API tests and `verify:bugs` were run before this was committed. The Playwright specs in `e2e/` were written but **not yet run** in a browser. Run them once and fix any selector drift before recording anything.
 
 ## Lab controls
 

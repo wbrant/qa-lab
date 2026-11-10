@@ -1,5 +1,4 @@
 'use strict';
-// NOTE: written but not yet run. Run `npm i && npx playwright install chromium && npm run e2e`.
 const { test, expect } = require('@playwright/test');
 
 test.beforeEach(async ({ request }) => {
